@@ -12,7 +12,7 @@ namespace controls
         {
             InitializeComponent();
 
-            MainPage = /*new NavigationPage(new  PageTest());*/ /*new myTabbedPage();*/ new MasterDetailPageOrnek();
+            MainPage = /*new NavigationPage(new  PageTest());*/ /*new myTabbedPage();*//* new MasterDetailPageOrnek();*/ new CaruselPageOrnek();
         }
 
         protected override void OnStart()
