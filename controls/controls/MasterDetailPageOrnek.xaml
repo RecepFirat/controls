@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:controls.MasterDetailPageFolder"     
+             x:Class="controls.MasterDetailPageOrnek">
+  
+    <!--masterTAbbed navıgation content bunlar genel tasarım desenlerı
+      xmlns:local="clr-namespace:controls.MasterDetailPageFolder"   ve bıldıgın o controllerın sayfasını eklıyorum yanı
+    
+    -->
+
+    <MasterDetailPage.Master>
+
+        <local:Page1 Title="master kısmı " BackgroundColor="Red"></local:Page1>
+        <!--mastersoldan saga cıkan kısım-->
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+
+
+        <local:Page2 Title="detay sayfası" BackgroundColor="Blue"></local:Page2>
+        <!--buda onun tam kısmı-->
+    </MasterDetailPage.Detail>
+    
+</MasterDetailPage>

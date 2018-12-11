@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:controls"
+             x:Class="controls.MainPage">
+
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Red" Orientation="Vertical">
+
+        <!--Orientation="Vertical"asagı dogru dikeyde sıralar 
+        Orientation="Horizontal" yanyana sıralar
+        Orientation="Vertical"  icine alacagın seylerı nasıl sıralıcanı belırtıyosun bu sekılde
+        
+        -->
+        <!-- Place new controls here 
+        HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+        
+        -->
+        <StackLayout BackgroundColor="Green"   HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Horizontal">
+
+
+            <Button Text="tıkla bana" BackgroundColor="Chocolate" VerticalOptions="Center"  HorizontalOptions="StartAndExpand" HeightRequest="40"></Button>
+            <Entry Placeholder="ben placeholderım " VerticalOptions="Center"  BackgroundColor="Pink" HorizontalOptions="CenterAndExpand" HeightRequest="40"></Entry>
+            <Switch BackgroundColor="DarkBlue" VerticalOptions="Center" HorizontalOptions="EndAndExpand" HeightRequest="40"></Switch>
+        </StackLayout>
+        <Label Text="xamarine hos geldiniz" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"  BackgroundColor="LightBlue"/>
+
+
+        <StackLayout   HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="LightYellow">
+            
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

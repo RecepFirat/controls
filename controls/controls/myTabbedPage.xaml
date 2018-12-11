@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local ="clr-namespace:controls.TabbedFolderPage"
+             x:Class="controls.myTabbedPage">
+    <!--xmlns:local ="clr-namespace:controls" eklemesi yapıyorum-->
+    <!--xmlns:local ="clr-namespace:controls.TabbedFolderPage" bu sekilde artık ıcerısınde olmasını ıstedıgım sayfaları buraya cagırabılıcem-->
+
+    <local:Page1 Title="sayfadinamik1"/>
+    <local:Page2 Title="sayfadinamik2"/>
+    <local:Page3 Title="sayfadinamik3"/>
+
+
+    <!--<ContentPage Title="Tab 1"/>
+    <ContentPage Title="tab 2"/>
+    <ContentPage Title="Tab 3"/>-->
+
+</TabbedPage>
