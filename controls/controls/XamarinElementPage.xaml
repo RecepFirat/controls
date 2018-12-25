@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="controls.XamarinElementPage">
+
+
+    <ContentPage.Padding>
+
+        <OnPlatform x:TypeArguments="Thickness" Android="0,0,0,0" iOS="0,20,0,0"/>
+    </ContentPage.Padding>
+    <!--en son binding islemlerindeydin-->
+    <ContentPage.Content>
+       
+        <StackLayout >
+            <!--BindingContext="{x:Reference myslider}"-->
+            <Label Text="{Binding Value,StringFormat='value is {0:F2'}" x:Name="benimlabel" Opacity="{Binding Value}"
+            />
+<!--direk reference kendisi icin eklemek istersek refence olarak value degerını ona set edıyorum-->
+            <Label Text="{Binding Source={x:Reference myslider},Path= Value,StringFormat='Value is {0:F2}'}" x:Name="ozelRefenceli" 
+            />
+            <!--Opacity="{Binding Value}"-->
+            <DatePicker x:Name=" mydatapicker"/>
+            <Button x:Name="benimbutton" Text="Tıkla Bana" Clicked="Benimbutton_Clicked"/>
+            <Entry x:Name="myentry"/>
+            <Slider x:Name="myslider"/> <!--bak burada olusan degerleri yukarada görebiliyor stacklayoute reference alacak degerı atayaraj
+            dıyorumkı degerını bıze gostersın-->
+         
+            <TimePicker x:Name="myTimePicker"/>
+            <Picker x:Name="myPicker" SelectedIndexChanged="MyPicker_SelectedIndexChanged"/>
+            <Switch x:Name="myswicth"/>
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

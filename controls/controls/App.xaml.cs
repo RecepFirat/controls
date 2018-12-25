@@ -12,7 +12,9 @@ namespace controls
         {
             InitializeComponent();
 
-            MainPage = /*new NavigationPage(new  PageTest());*/ /*new myTabbedPage();*//* new MasterDetailPageOrnek();*/ new CaruselPageOrnek();
+            MainPage = /*new NavigationPage(new  PageTest());*/ /*new myTabbedPage();*//* new MasterDetailPageOrnek();*/
+                                                                                       //new   XamarinElementPage(); 
+              new ListViewSamplePage();
         }
 
         protected override void OnStart()
