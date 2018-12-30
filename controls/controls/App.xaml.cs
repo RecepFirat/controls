@@ -14,7 +14,7 @@ namespace controls
 
             MainPage = /*new NavigationPage(new  PageTest());*/ /*new myTabbedPage();*//* new MasterDetailPageOrnek();*/
                                                                                        //new   XamarinElementPage(); 
-              new ListViewSamplePage();
+                                                                                       /*new ListViewSamplePage();*/   new TableViewPageSample();
         }
 
         protected override void OnStart()

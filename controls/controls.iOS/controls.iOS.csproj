@@ -160,4 +160,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\DSCN0456.JPG" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\rtf.jpg" />
+  </ItemGroup>
 </Project>

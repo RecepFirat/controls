@@ -4,15 +4,30 @@
              x:Class="controls.ListViewSamplePage">
     <ContentPage.Content>
         <StackLayout  BackgroundColor="LightBlue">
-            <ListView x:Name="mylistview">
+            <ListView x:Name="mylistview"   IsPullToRefreshEnabled="True" Refreshing="Mylistview_Refreshing"    >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <!--<ImageCell Text="{Binding UserName}" Detail="{Binding Userid}" ImageSource="{Binding ImageURL}"/>-->
-
+                        <!--IsPullToRefreshEnabled="True" Refreshing="Mylistview_Refreshing" yenileme icin
+                        
+                        sistemin kendini otomatik olarak verinin uzerine basıldıgında bısılerın cıkması ıcın olusturuldu
+                        <ViewCell.ContextActions>
+                                <MenuItem Text="Ekle" Clicked="MenuItem_Clicked"/>
+                                <MenuItem Text="Sil" x:Name="onDelete" Clicked="OnDelete_Clicked"   CommandParameter="{Binding Userid}"/>
+                                
+                            </ViewCell.ContextActions>
+                        
+                        
+                        -->
                         <!--<TextCell Text="{Binding UserName}" Detail="{Binding Userid}" />-->
                         <!--<EntryCell Text="{Binding UserName}"  Label="{Binding Userid}"></EntryCell>-->
 
                         <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Ekle" Clicked="MenuItem_Clicked"/>
+                                <MenuItem Text="Sil" x:Name="onDelete" Clicked="OnDelete_Clicked"   CommandParameter="{Binding Userid}"/>
+                                
+                            </ViewCell.ContextActions>
                             <!--bole bu tarz icerisine tasarım yapabiliyorum-->
                             <Grid>
                                 

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="controls.TableViewPageSample">
+  
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView Intent="Form">
+                <TableRoot>
+                    <TableSection Title="Ayarlar">
+                        <SwitchCell Text="Bilinmeyen Numaralara izin" On="False" />
+                        <EntryCell Text="Bir Mesaj Bırakın"/>
+                        <TextCell Text="Developer Actions" Detail="join"/>
+                        <ImageCell ImageSource="rtf.jpg" Text="OrnekResim" Detail="detay tagı"/>
+
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+
+
+                                <Image Source="rtf.jpg" Aspect="Fill" Grid.Row="0" Grid.Column="0"/>
+                                <Label Text="OYeee"  Grid.Row="0" Grid.Column="1"/>
+                                <Switch IsToggled="True"  Grid.Row="0" Grid.Column="2"/>
+
+
+                            </Grid>
+                            
+                            
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
